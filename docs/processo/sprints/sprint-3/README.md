@@ -1,33 +1,109 @@
 # API 3º Semestre BD
-# LizardsDBA - <NOME_DO_PROJETO>
+# LizardsDBA - FlowTrack
 # Documentação - Sprint 3
 <p align="center">
       <img src="/docs/assets/logo_lizards.jpeg" alt="logo LizardsDBA" width="200">
 
 ## Desafio 
 
-<DESCRICAO_DESAFIO>
+O desafio consiste no desenvolvimento de um sistema web para controle e análise dos abastecimentos das viaturas do IPEM – Regional de São José dos Campos, substituindo o atual processo manual realizado por meio de pranchetas físicas mantidas nos veículos. Atualmente, os técnicos registram informações como quilometragem, litros abastecidos, valor pago e número da nota fiscal de forma manual, o que dificulta a consolidação mensal dos dados, a análise comparativa entre viaturas e o acompanhamento do consumo médio de combustível. A proposta do projeto é digitalizar esses registros, garantindo maior organização, rastreabilidade e confiabilidade das informações, além de permitir a geração de indicadores gerenciais que apoiem a tomada de decisão e facilitem a consolidação dos dados para posterior inserção no SGI.
+
+## Sprint Goal
+
+Disponibilizar **ferramentas de gestão e análise**, incluindo avisos de manutenção preventiva, indicadores de desempenho das viaturas e relatórios consolidados para apoio à tomada de decisão e envio de informações ao SGI.
 
 ## Backlog da Sprint 3
 | RANK | PRIORIDADE | USER STORY | STORY POINTS | SPRINT | STATUS |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 1 | Lorem Ipsum | Lorem Ipsum is simply dummy text of the printing and typesetting industry. | 2 | 1 | :white_check_mark: |
-| 2 | Lorem Ipsum | Lorem Ipsum is simply dummy text of the printing and typesetting industry. | 2 | 1 | :white_check_mark: |
-| 3 | Lorem Ipsum | Lorem Ipsum is simply dummy text of the printing and typesetting industry. | 3 | 1 | :white_check_mark: |
+| 7    | Baixa      | Como administrador, eu quero receber avisos de manutenção preventiva quando a quilometragem da viatura atingir determinados intervalos, para apoiar o controle de revisão dos veículos. | 5            | 3      | ⏳      |
+| 8    | Baixa      | Como administrador, eu quero ter visibilidade de indicadores como: Consumo médio, quilometragem percorrida e gastos por viatura, para facilitar a análise gerencial.               | 8            | 3      | ⏳      |
+| 9   | Baixa      | Como administrador, eu quero gerar relatórios consolidados de utilização e abastecimento das viaturas, para facilitar o envio das informações ao SGI.                                   | 5            | 3      | ⏳      |
 
 ## Burndown da Sprint 3 
 
 <td><img src="URL AQUI DA IMAGEM" width="600"></td>
 
-## DoR - Definition of Ready – Sprint 3
-<DOR_SP3>
-### Requisitos Gerais
+# DoR - Definition of Ready – Sprint 3
 
+## Requisitos Gerais
 
+| Critério           | Descrição                                                                                                                               |
+| :----------------- | :-------------------------------------------------------------------------------------------------------------------------------------- |
+| Wireframe aprovado | Wireframe ou protótipo das telas de indicadores, manutenção preventiva e relatórios aprovado pelo time.                                 |
+| Layout definido    | Estrutura visual das telas definida (dashboard com indicadores, avisos de manutenção e tela de relatórios).                             |
+| Escopo claro       | Funcionalidades da sprint definidas: avisos de manutenção preventiva, visualização de indicadores e geração de relatórios consolidados. |
+| Critério de aceite | O sistema deve apresentar indicadores gerenciais, alertar sobre manutenção preventiva e permitir gerar relatórios consolidados.         |
 
-## DoD - Definition of Done – Sprint 3
-<DOD_SP3>
-### Requisitos Gerais
+---
+
+## Tela de Avisos de Manutenção Preventiva
+
+| Critério                       | Descrição                                                                                                         |
+| :----------------------------- | :---------------------------------------------------------------------------------------------------------------- |
+| Mockup da tela                 | Mockup exibindo avisos de manutenção preventiva das viaturas.                                                     |
+| Estrutura visual confirmada    | Estrutura da tela validada pelo time (lista ou alerta visual das viaturas que atingiram intervalo de manutenção). |
+| Regras de manutenção definidas | Intervalos de quilometragem para manutenção preventiva definidos com base nos cadastros do sistema.               |
+
+---
+
+## Tela de Dashboard de Indicadores
+
+| Critério                    | Descrição                                                                                                 |
+| :-------------------------- | :-------------------------------------------------------------------------------------------------------- |
+| Mockup do dashboard         | Mockup contendo indicadores principais como consumo médio, quilometragem percorrida e gastos por viatura. |
+| Estrutura visual confirmada | Estrutura do dashboard definida (cards, gráficos ou tabelas).                                             |
+| Indicadores definidos       | Indicadores que serão exibidos no dashboard definidos e alinhados com as necessidades do cliente.         |
+
+---
+
+## Tela de Relatórios
+
+| Critério                     | Descrição                                                                                       |
+| :--------------------------- | :---------------------------------------------------------------------------------------------- |
+| Mockup da tela de relatórios | Mockup exibindo tela de geração de relatórios de utilização e abastecimento.                    |
+| Estrutura visual confirmada  | Estrutura da tela validada (filtros por período, viatura ou usuário e listagem dos resultados). |
+| Dados necessários definidos  | Campos necessários para compor os relatórios definidos conforme informações utilizadas no SGI.  |
+
+---
+
+# DoD - Definition of Done – Sprint 3
+
+## Requisitos Gerais
+
+| Critério                         | Descrição                                                                                                      |
+| :------------------------------- | :------------------------------------------------------------------------------------------------------------- |
+| Implementação funcional completa | Funcionalidades de avisos de manutenção, dashboard e relatórios implementadas conforme user stories da sprint. |
+| Disponibilidade em repositório   | Código disponível em repositório e acessível para demonstração.                                                |
+| Testes básicos realizados        | Funcionalidades testadas manualmente pelo time (avisos, indicadores e relatórios).                             |
+| Navegação funcional              | Navegação entre dashboard, relatórios e outras telas do sistema funcionando corretamente.                      |
+
+---
+
+## Tela de Avisos de Manutenção Preventiva
+
+| Critério                    | Descrição                                                                                                           |
+| :-------------------------- | :------------------------------------------------------------------------------------------------------------------ |
+| Identificação de manutenção | O sistema identifica automaticamente quando a quilometragem da viatura atinge o intervalo definido para manutenção. |
+| Exibição de avisos          | A tela exibe alertas ou listagem das viaturas que necessitam de manutenção preventiva.                              |
+
+---
+
+## Tela de Dashboard de Indicadores
+
+| Critério              | Descrição                                                                                               |
+| :-------------------- | :------------------------------------------------------------------------------------------------------ |
+| Indicadores exibidos  | O sistema apresenta indicadores como consumo médio, quilometragem percorrida e gastos por viatura.      |
+| Atualização dos dados | Indicadores são calculados com base nos registros de utilização e abastecimento armazenados no sistema. |
+
+---
+
+## Tela de Relatórios
+
+| Critério              | Descrição                                                                                   |
+| :-------------------- | :------------------------------------------------------------------------------------------ |
+| Geração de relatórios | O sistema permite gerar relatórios consolidados de utilização e abastecimento das viaturas. |
+| Informações exibidas  | Relatórios apresentam dados necessários para análise e posterior envio ao SGI.              |
+| Consulta funcional    | Administradores conseguem visualizar e consultar os relatórios gerados no sistema.          |
 
 
 ## Equipe

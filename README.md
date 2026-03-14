@@ -1,5 +1,5 @@
 # API 3º Semestre BD
-# LizardsDBA - <NOME_DO_PROJETO>
+# LizardsDBA - FlowTrack
 <p align="center">
       <img src="docs/assets/logo_lizards.jpeg" alt="logo LizardsDBA" width="200">
 </p>
@@ -17,43 +17,66 @@
 </p>
 
 ## Título do projeto
-#### <TITULO_DO_PROJETO>
+#### Sistema de Gestão de Utilização, Abastecimento e Manutenção de Viaturas – FlowTrack
 
 ## Desafio
-<DESCRICAO_DO_DESAFIO>
+O desafio consiste no desenvolvimento de um sistema web para controle e análise dos abastecimentos das viaturas do IPEM – Regional de São José dos Campos, substituindo o atual processo manual realizado por meio de pranchetas físicas mantidas nos veículos. Atualmente, os técnicos registram informações como quilometragem, litros abastecidos, valor pago e número da nota fiscal de forma manual, o que dificulta a consolidação mensal dos dados, a análise comparativa entre viaturas e o acompanhamento do consumo médio de combustível. A proposta do projeto é digitalizar esses registros, garantindo maior organização, rastreabilidade e confiabilidade das informações, além de permitir a geração de indicadores gerenciais que apoiem a tomada de decisão e facilitem a consolidação dos dados para posterior inserção no SGI.
 
 
 ## Solução
-<SOLUCAO>
+FlowTrack — Plataforma de Controle de Abastecimento e Utilização de Viaturas.
+O FlowTrack permitirá o registro digital da utilização de viaturas, substituindo o controle manual realizado em pranchetas. A solução possibilita registrar abastecimentos, início e término de uso dos veículos, mantendo histórico completo de quilometragem, consumo e despesas. Além disso, contará com gerenciamento de cadastros, avisos de manutenção preventiva baseados em quilometragem e visualização de indicadores e relatórios consolidados, facilitando o acompanhamento da frota e a organização das informações para posterior inserção no SGI.
 
 ---
 
 ## Backlog do Produto
-<BACKLOG_DO_PRODUTO>
+
+| RANK | PRIORIDADE | USER STORY                                                                                                                                                                              | STORY POINTS | SPRINT | STATUS |
+| ---- | ---------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | ------ | ------ |
+| 1    | Alta       | Como técnico, eu quero registrar um abastecimento informando viatura, quilometragem, litros, valor e número da nota fiscal, para substituir o registro manual da prancheta.             | 5            | 1      | ⏳      |
+| 2   | Alta      | Como administrador, eu quero gerenciar os cadastros do sistema (usuários, viaturas, tipos de combustível, tipos de serviço, tipos de despesa e intervalos de manutenção), para manter as informações necessárias para o funcionamento da aplicação atualizadas e organizadas. | 5            | 1      | ⏳      |
+| 3    | Alta      | Como administrador, eu quero uma forma de comprovar o valor gasto no abastecimento. | 5            | 1      | ⏳      |
+| 4    | Média       | Como administrador, eu quero que o técnico inicie o uso de uma viatura informando prefixo, quilometragem inicial, data e finalidade do deslocamento, para registrar o início da utilização.     | 5            | 2      | ⏳      |
+| 5    | Média       | Como administrador, eu quero que o tecnico encerre o uso da viatura informando a quilometragem final, para registrar o término da utilização e calcular a quilometragem percorrida.                        | 3            | 2      | ⏳      |
+| 6    | Média      | Como administrador, eu quero consultar o histórico completo de utilização das viaturas (saídas, retornos e abastecimentos), para permitir auditoria e acompanhamento dos registros.     | 5            | 2      | ⏳      |
+| 7    | Baixa      | Como administrador, eu quero receber avisos de manutenção preventiva quando a quilometragem da viatura atingir determinados intervalos, para apoiar o controle de revisão dos veículos. | 5            | 3      | ⏳      |
+| 8    | Baixa      | Como administrador, eu quero ter visibilidade de indicadores como: Consumo médio, quilometragem percorrida e gastos por viatura, para facilitar a análise gerencial.               | 8            | 3      | ⏳      |
+| 9   | Baixa      | Como administrador, eu quero gerar relatórios consolidados de utilização e abastecimento das viaturas, para facilitar o envio das informações ao SGI.                                   | 5            | 3      | ⏳      |
 
 ---
 
 ## DoR - Definition of Ready
 
-<DOR>
+* User Stories com Critérios de Aceitação definidos
+* Tarefas técnicas quebradas a partir das User Stories
+* Modelagem inicial do Banco de Dados (tabelas: usuario, viatura, abastecimento)
+* Protótipo da tela de cadastro de abastecimento
+* User Stories validadas com o parceiro
+* Sem dependências externas bloqueando o desenvolvimento
 
 ## DoD - Definition of Done
 
-<DOD>
+* Manual de Usuário atualizado
+* Manual Técnico atualizado
+* Código versionado no GitHub com PR revisado
+* Funcionalidade operacional e testada
+* Validação de dados funcionando conforme critérios de aceitação
+* Banco de dados atualizado e documentado (MER + Dicionário de Dados)
 
 ---
 
 ## Cronograma de Sprints
 | Sprint | Período | Documentação |
 | :----- | :------: | :----------- |
-| 🔴 **KICK-OFF GERAL** | 02/03 - 06/03 |  |
-| 🔴 **CONSTRUÇÃO DO BACKLOG DE PRODUTO / PLANNING** | 09/03 - 13/03 |  |
+| 🟢 **KICK-OFF GERAL** | 02/03 - 06/03 |  |
+| 🟢 **CONSTRUÇÃO DO BACKLOG DE PRODUTO / PLANNING** | 09/03 - 13/03 |  |
 | 🔴 **SPRINT 1** | 16/03 - 05/04 | [Sprint 1](./docs/processo/sprints/sprint-1/README.md) |
 | 🔴 **SPRINT 1 REVIEW/PLANNING** | 06/04 - 10/04 | [Sprint 1](./docs/processo/sprints/sprint-1/README.md) |
 | 🔴 **SPRINT 2** | 13/04 - 03/05 | [Sprint 2](./docs/processo/sprints/sprint-2/README.md) |
 | 🔴 **SPRINT 2 REVIEW/PLANNING** | 04/05 - 08/05 | [Sprint 2](./docs/processo/sprints/sprint-2/README.md) |
 | 🔴 **SPRINT 3** | 11/05 - 31/05 | [Sprint 3](./docs/processo/sprints/sprint-3/README.md) |
 | 🔴 **SPRINT 3 REVIEW/PLANNING** | 01/06 - 05/06 | [Sprint 3](./docs/processo/sprints/sprint-3/README.md) |
+| 🔴 **FEIRA DE SOLUÇÕES** | 18/06 |  |
 
 ---
 
