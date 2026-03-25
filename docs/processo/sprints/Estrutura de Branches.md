@@ -2,7 +2,7 @@
 
 main: Branch principal, sempre estável e pronta para entrega.  
 feat/<nome-da-feature>: Novas funcionalidades.  
-fix/<nome-do-fix>: Correções de bugs.  
+bugfix/<nome-do-fix>: Correções de bugs.  
 hotfix/<nome-do-hotfix>: Correções urgentes diretamente relacionadas à produção.  
 refactor/<nome>: Refatorações sem alteração de regra de negócio.  
 
