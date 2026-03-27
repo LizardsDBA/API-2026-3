@@ -23,46 +23,53 @@ Disponibilizar **ferramentas de gestão e análise**, incluindo avisos de manute
 
 <td><img src="URL AQUI DA IMAGEM" width="600"></td>
 
-# DoR - Definition of Ready – Sprint 3
+#  DoR - Definition of Ready – Sprint 3
 
 ## Requisitos Gerais
 
-| Critério           | Descrição                                                                                                                               |
-| :----------------- | :-------------------------------------------------------------------------------------------------------------------------------------- |
-| Wireframe aprovado | Wireframe ou protótipo das telas de indicadores, manutenção preventiva e relatórios aprovado pelo time.                                 |
-| Layout definido    | Estrutura visual das telas definida (dashboard com indicadores, avisos de manutenção e tela de relatórios).                             |
-| Escopo claro       | Funcionalidades da sprint definidas: avisos de manutenção preventiva, visualização de indicadores e geração de relatórios consolidados. |
-| Critério de aceite | O sistema deve apresentar indicadores gerenciais, alertar sobre manutenção preventiva e permitir gerar relatórios consolidados.         |
+| Critério                           | Descrição                                                                       |
+| :--------------------------------- | :------------------------------------------------------------------------------ |
+| Backlog refinado                   | User Stories da Sprint 3 revisadas, estimadas e priorizadas.                    |
+| Dependência das sprints anteriores | Dados de abastecimento e utilização já disponíveis para cálculo de indicadores. |
+| Modelo analítico definido          | Regras de cálculo para indicadores e relatórios definidas.                      |
+| Regras de manutenção definidas     | Intervalos de manutenção cadastrados e vinculados às viaturas.                  |
+| Sem bloqueios                      | Nenhuma dependência impede o desenvolvimento das funcionalidades.               |
 
 ---
 
-## Tela de Avisos de Manutenção Preventiva
+## US07 – Avisos de manutenção preventiva
 
-| Critério                       | Descrição                                                                                                         |
-| :----------------------------- | :---------------------------------------------------------------------------------------------------------------- |
-| Mockup da tela                 | Mockup exibindo avisos de manutenção preventiva das viaturas.                                                     |
-| Estrutura visual confirmada    | Estrutura da tela validada pelo time (lista ou alerta visual das viaturas que atingiram intervalo de manutenção). |
-| Regras de manutenção definidas | Intervalos de quilometragem para manutenção preventiva definidos com base nos cadastros do sistema.               |
+| Critério                      | Descrição                                                           |
+| :---------------------------- | :------------------------------------------------------------------ |
+| Wireframe aprovado            | Tela de avisos de manutenção validada pelo time.                    |
+| Regras definidas              | Intervalos de manutenção por quilometragem definidos.               |
+| Fonte de dados definida       | Quilometragem baseada no histórico de uso das viaturas.             |
+| Critérios de aceite definidos | Sistema deve identificar automaticamente necessidade de manutenção. |
 
----
-
-## Tela de Dashboard de Indicadores
-
-| Critério                    | Descrição                                                                                                 |
-| :-------------------------- | :-------------------------------------------------------------------------------------------------------- |
-| Mockup do dashboard         | Mockup contendo indicadores principais como consumo médio, quilometragem percorrida e gastos por viatura. |
-| Estrutura visual confirmada | Estrutura do dashboard definida (cards, gráficos ou tabelas).                                             |
-| Indicadores definidos       | Indicadores que serão exibidos no dashboard definidos e alinhados com as necessidades do cliente.         |
 
 ---
 
-## Tela de Relatórios
+## US08 – Dashboard de indicadores
 
-| Critério                     | Descrição                                                                                       |
-| :--------------------------- | :---------------------------------------------------------------------------------------------- |
-| Mockup da tela de relatórios | Mockup exibindo tela de geração de relatórios de utilização e abastecimento.                    |
-| Estrutura visual confirmada  | Estrutura da tela validada (filtros por período, viatura ou usuário e listagem dos resultados). |
-| Dados necessários definidos  | Campos necessários para compor os relatórios definidos conforme informações utilizadas no SGI.  |
+| Critério                      | Descrição                                                   |
+| :---------------------------- | :---------------------------------------------------------- |
+| Wireframe aprovado            | Tela de dashboard validada pelo time.                       |
+| Indicadores definidos         | Consumo médio, km percorrido e gasto por viatura definidos. |
+| Fórmulas definidas            | Regras de cálculo documentadas (km/l, somatórios, médias).  |
+| Critérios de aceite definidos | Indicadores devem refletir dados reais do sistema.          |
+
+
+---
+
+## US09 – Relatórios consolidados
+
+| Critério                      | Descrição                                         |
+| :---------------------------- | :------------------------------------------------ |
+| Wireframe aprovado            | Tela de relatórios validada pelo time.            |
+| Estrutura definida            | Filtros por período, viatura e usuário definidos. |
+| Campos definidos              | Dados alinhados com necessidade do SGI.           |
+| Critérios de aceite definidos | Relatórios devem consolidar dados corretamente.   |
+
 
 ---
 
@@ -70,40 +77,47 @@ Disponibilizar **ferramentas de gestão e análise**, incluindo avisos de manute
 
 ## Requisitos Gerais
 
-| Critério                         | Descrição                                                                                                      |
-| :------------------------------- | :------------------------------------------------------------------------------------------------------------- |
-| Implementação funcional completa | Funcionalidades de avisos de manutenção, dashboard e relatórios implementadas conforme user stories da sprint. |
-| Disponibilidade em repositório   | Código disponível em repositório e acessível para demonstração.                                                |
-| Testes básicos realizados        | Funcionalidades testadas manualmente pelo time (avisos, indicadores e relatórios).                             |
-| Navegação funcional              | Navegação entre dashboard, relatórios e outras telas do sistema funcionando corretamente.                      |
+| Critério            | Descrição                                                       |
+| :------------------ | :-------------------------------------------------------------- |
+| Código versionado   | Código commitado seguindo padrão definido.                      |
+| Build funcionando   | Projeto executa corretamente sem erros.                         |
+| Integração completa | Funcionalidades utilizam dados das Sprints 1 e 2.               |
+| Evidências geradas  | Prints ou vídeo demonstrando funcionamento das funcionalidades. |
 
 ---
 
-## Tela de Avisos de Manutenção Preventiva
+## US07 – Avisos de manutenção preventiva
 
-| Critério                    | Descrição                                                                                                           |
-| :-------------------------- | :------------------------------------------------------------------------------------------------------------------ |
-| Identificação de manutenção | O sistema identifica automaticamente quando a quilometragem da viatura atinge o intervalo definido para manutenção. |
-| Exibição de avisos          | A tela exibe alertas ou listagem das viaturas que necessitam de manutenção preventiva.                              |
+| Critério           | Descrição                                                                          |
+| :----------------- | :--------------------------------------------------------------------------------- |
+| Regra aplicada     | Sistema identifica automaticamente quando a viatura atinge o limite de manutenção. |
+| Cálculo correto    | Quilometragem acumulada utilizada para validação.                                  |
+| Exibição funcional | Avisos exibidos em tela (lista ou alerta).                                         |
+| Dados consistentes | Informações baseadas nos registros reais do sistema.                               |
 
----
-
-## Tela de Dashboard de Indicadores
-
-| Critério              | Descrição                                                                                               |
-| :-------------------- | :------------------------------------------------------------------------------------------------------ |
-| Indicadores exibidos  | O sistema apresenta indicadores como consumo médio, quilometragem percorrida e gastos por viatura.      |
-| Atualização dos dados | Indicadores são calculados com base nos registros de utilização e abastecimento armazenados no sistema. |
 
 ---
 
-## Tela de Relatórios
+## US08 – Dashboard de indicadores
 
-| Critério              | Descrição                                                                                   |
-| :-------------------- | :------------------------------------------------------------------------------------------ |
-| Geração de relatórios | O sistema permite gerar relatórios consolidados de utilização e abastecimento das viaturas. |
-| Informações exibidas  | Relatórios apresentam dados necessários para análise e posterior envio ao SGI.              |
-| Consulta funcional    | Administradores conseguem visualizar e consultar os relatórios gerados no sistema.          |
+| Critério             | Descrição                                                               |
+| :------------------- | :---------------------------------------------------------------------- |
+| Indicadores exibidos | Consumo médio, km percorrido e gastos por viatura apresentados.         |
+| Cálculo correto      | Indicadores calculados com base nos abastecimentos e usos registrados.  |
+| Atualização dinâmica | Dados refletem informações atualizadas do sistema.                      |
+| Visualização clara   | Dashboard organizado com boa legibilidade (cards, tabelas ou gráficos). |
+
+
+---
+
+## US09 – Relatórios consolidados
+
+| Critério           | Descrição                                              |
+| :----------------- | :----------------------------------------------------- |
+| Geração funcional  | Sistema gera relatórios de utilização e abastecimento. |
+| Filtros aplicáveis | Permite filtrar por período, viatura e usuário.        |
+| Dados completos    | Informações consolidadas corretamente para análise.    |
+| Apoio ao SGI       | Relatório facilita a inserção manual no SGI.           |
 
 
 ## Equipe
