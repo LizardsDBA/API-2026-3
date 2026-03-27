@@ -29,32 +29,72 @@ Implementar as funcionalidades essenciais do sistema, permitindo o **registro de
 
 ## Requisitos Gerais
 
-| Critério           | Descrição                                                                                                 |
-| :----------------- | :-------------------------------------------------------------------------------------------------------- |
-| Wireframe aprovado | Wireframe ou protótipo das telas principais (abastecimento e cadastros) aprovado pelo time.               |
-| Layout definido    | Estrutura visual básica das telas definida (menu, formulários e tabelas).                                 |
-| Escopo claro       | Funcionalidades da sprint definidas: registro de abastecimento, cadastros e comprovação do valor gasto.   |
-| Critério de aceite | O sistema deve permitir registrar abastecimento e gerenciar cadastros conforme definido nas user stories. |
+| Critério                         | Descrição                                                                      |
+| :------------------------------- | :----------------------------------------------------------------------------- |
+| Backlog priorizado               | User Stories da Sprint 1 definidas, priorizadas e estimadas.                   |
+| Critérios de aceitação definidos | Todas as US possuem critérios claros e testáveis.                              |
+| Modelo de dados inicial          | Entidades principais definidas (Usuário, Viatura, Combustível, Abastecimento). |
+| Ambiente configurado             | Projeto Java + JavaFX + Maven configurado e executando.                        |
+| Sem bloqueios                    | Nenhuma dependência externa impede o início da sprint.                         |
 
 ---
 
-## Tela de Registro de Abastecimento
+## US01 – Registrar abastecimento
 
-| Critério                      | Descrição                                                                                                     |
-| :---------------------------- | :------------------------------------------------------------------------------------------------------------ |
-| Mockup do formulário          | Mockup do formulário de abastecimento contendo viatura, quilometragem, litros, valor e número da nota fiscal. |
-| Estrutura visual confirmada   | Estrutura da tela (formulário e botões de registro) validada pelo time.                                       |
-| Comprovação de gasto definida | Campo ou mecanismo definido para registrar ou anexar comprovante do abastecimento.                            |
+| Critério                      | Descrição                                                           |
+| :---------------------------- | :------------------------------------------------------------------ |
+| Wireframe aprovado            | Tela de abastecimento validada com campos obrigatórios definidos.   |
+| Campos definidos              | Viatura, quilometragem, litros, valor e nº da nota fiscal mapeados. |
+| Fluxo definido                | Técnico registra abastecimento diretamente no sistema.              |
+| Critérios de aceite definidos | Validação de campos obrigatórios e persistência definidos.          |
+
 
 ---
 
-## Tela de Cadastros do Sistema
+## US02 – Cadastrar usuários
 
-| Critério                    | Descrição                                                                                                                                                                      |
-| :-------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Mockup da listagem          | Mockup das telas de cadastro exibindo lista de registros (ex: usuários, viaturas, combustíveis).                                                                               |
-| Estrutura visual confirmada | Estrutura das telas definida (tabela de registros + formulário de cadastro).                                                                                                   |
-| Entidades definidas         | Entidades necessárias para o funcionamento do sistema identificadas (usuários, viaturas, tipos de combustível, tipos de serviço, tipos de despesa e intervalos de manutenção). |
+| Critério                       | Descrição                                      |
+| :----------------------------- | :--------------------------------------------- |
+| Modelo de usuário definido     | Campos definidos (matrícula, nome, tipo).      |
+| Regra de autenticação definida | Login será feito por matrícula.                |
+| Wireframe aprovado             | Tela de cadastro de usuário definida.          |
+| Critérios de aceite definidos  | Cadastro e identificação do usuário definidos. |
+
+
+---
+
+## US03 – Cadastrar viaturas
+
+| Critério                      | Descrição                                                   |
+| :---------------------------- | :---------------------------------------------------------- |
+| Modelo de viatura definido    | Prefixo, tipo de combustível e atributos básicos definidos. |
+| Relacionamentos definidos     | Viatura vinculada ao tipo de combustível.                   |
+| Wireframe aprovado            | Tela de cadastro de viatura definida.                       |
+| Critérios de aceite definidos | Cadastro e listagem definidos.                              |
+
+
+---
+
+## US04 – Cadastrar tipos de combustível
+
+| Critério                       | Descrição                                               |
+| :----------------------------- | :------------------------------------------------------ |
+| Lista de combustíveis definida | Tipos básicos identificados (gasolina, etanol, diesel). |
+| Wireframe aprovado             | Tela de cadastro simples definida.                      |
+| Critérios de aceite definidos  | Cadastro e seleção nos formulários definidos.           |
+
+
+---
+
+## US05 – Comprovar gasto de abastecimento
+
+| Critério                      | Descrição                                               |
+| :---------------------------- | :------------------------------------------------------ |
+| Forma de comprovação definida | Upload de imagem da nota fiscal ou registro do número.  |
+| Wireframe aprovado            | Campo de anexo ou registro definido na tela.            |
+| Regras definidas              | Tipos de arquivo e vínculo com abastecimento definidos. |
+| Critérios de aceite definidos | Comprovação vinculada ao registro.                      |
+
 
 ---
 
@@ -62,32 +102,67 @@ Implementar as funcionalidades essenciais do sistema, permitindo o **registro de
 
 ## Requisitos Gerais
 
-| Critério                       | Descrição                                                                                              |
-| :----------------------------- | :----------------------------------------------------------------------------------------------------- |
-| Implementação funcional básica | Funcionalidades de cadastro e registro de abastecimento implementadas conforme user stories da sprint. |
-| Disponibilidade em repositório | Código disponível em repositório e acessível para demonstração.                                        |
-| Testes básicos realizados      | Funcionalidades testadas manualmente pelo time (cadastros e registro de abastecimento).                |
-| Navegação funcional            | Navegação entre as telas principais funcionando corretamente.                                          |
+| Critério            | Descrição                                      |
+| :------------------ | :--------------------------------------------- |
+| Código versionado   | Código commitado com padrão definido.          |
+| Build funcionando   | Projeto executa via Maven sem erros.           |
+| Navegação funcional | Telas acessíveis via menu.                     |
+| Evidências geradas  | Prints ou vídeo da funcionalidade funcionando. |
 
 ---
 
-## Tela de Registro de Abastecimento
+## US01 – Registrar abastecimento
 
-| Critério                            | Descrição                                                                                                           |
-| :---------------------------------- | :------------------------------------------------------------------------------------------------------------------ |
-| Registro de abastecimento funcional | O sistema permite registrar abastecimento informando viatura, quilometragem, litros, valor e número da nota fiscal. |
-| Dados armazenados                   | Informações registradas ficam armazenadas e podem ser consultadas posteriormente.                                   |
-| Comprovação do valor gasto          | Sistema permite registrar ou anexar comprovante do abastecimento.                                                   |
+| Critério                 | Descrição                                             |
+| :----------------------- | :---------------------------------------------------- |
+| Registro funcional       | Usuário consegue registrar abastecimento.             |
+| Validação aplicada       | Campos obrigatórios validados.                        |
+| Persistência             | Dados salvos no banco SQLite.                         |
+| Identificação do usuário | Registro vinculado automaticamente ao técnico logado. |
+
 
 ---
 
-## Tela de Cadastros do Sistema
+## US02 – Cadastrar usuários
 
-| Critério              | Descrição                                                                                      |
-| :-------------------- | :--------------------------------------------------------------------------------------------- |
-| Cadastro de entidades | Sistema permite cadastrar e visualizar registros de usuários, viaturas e tipos de combustível. |
-| Listagem de registros | Tabelas exibem os registros cadastrados para consulta.                                         |
-| Cadastro funcional    | Novos registros podem ser adicionados através dos formulários de cadastro.                     |
+| Critério           | Descrição                               |
+| :----------------- | :-------------------------------------- |
+| Cadastro funcional | Usuário pode ser cadastrado no sistema. |
+| Listagem           | Usuários cadastrados são exibidos.      |
+| Identificação      | Matrícula utilizada como identificador. |
+
+
+---
+
+## US03 – Cadastrar viaturas
+
+| Critério           | Descrição                         |
+| :----------------- | :-------------------------------- |
+| Cadastro funcional | Viaturas podem ser cadastradas.   |
+| Listagem           | Viaturas exibidas em tabela.      |
+| Relacionamento     | Viatura vinculada ao combustível. |
+
+
+---
+
+## US04 – Cadastrar tipos de combustível
+
+| Critério           | Descrição                                   |
+| :----------------- | :------------------------------------------ |
+| Cadastro funcional | Tipos de combustível podem ser cadastrados. |
+| Listagem           | Tipos disponíveis para seleção.             |
+| Uso integrado      | Utilizado no cadastro de viaturas.          |
+
+
+---
+
+## US05 – Comprovar gasto de abastecimento
+
+| Critério         | Descrição                                             |
+| :--------------- | :---------------------------------------------------- |
+| Upload funcional | Sistema permite anexar comprovante (ou registrar NF). |
+| Vínculo correto  | Comprovante associado ao abastecimento.               |
+| Persistência     | Referência armazenada no banco.                       |
 
 
 ## Equipe
