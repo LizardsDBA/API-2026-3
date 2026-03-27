@@ -27,42 +27,49 @@ Permitir o **controle da utilização das viaturas**, registrando início e tér
 
 ## Requisitos Gerais
 
-| Critério           | Descrição                                                                                                                 |
-| :----------------- | :------------------------------------------------------------------------------------------------------------------------ |
-| Wireframe aprovado | Wireframe ou protótipo das telas relacionadas ao uso da viatura e histórico aprovado pelo time.                           |
-| Layout definido    | Estrutura visual das telas definida (formulários de início/fim de uso e tela de histórico).                               |
-| Escopo claro       | Funcionalidades da sprint definidas: início do uso da viatura, encerramento do uso e consulta ao histórico de utilização. |
-| Critério de aceite | O sistema deve permitir registrar início e término da utilização da viatura e consultar o histórico de registros.         |
+| Critério                   | Descrição                                                                                   |
+| :------------------------- | :------------------------------------------------------------------------------------------ |
+| Backlog refinado           | User Stories da Sprint 2 revisadas, estimadas e priorizadas.                                |
+| Dependências resolvidas    | Cadastros e abastecimento (Sprint 1) disponíveis para uso.                                  |
+| Modelo de dados atualizado | Entidades de utilização da viatura definidas (uso, início, fim, vínculo com abastecimento). |
+| Fluxo validado com cliente | Processo de início → uso → abastecimento → encerramento alinhado com o cliente.             |
+| Sem bloqueios              | Nenhuma dependência impede o desenvolvimento das funcionalidades.                           |
 
 ---
 
-## Tela de Início de Uso da Viatura
+## US04 – Iniciar uso da viatura
 
-| Critério                      | Descrição                                                                                                  |
-| :---------------------------- | :--------------------------------------------------------------------------------------------------------- |
-| Mockup do formulário          | Mockup do formulário contendo viatura (prefixo), quilometragem inicial, data e finalidade do deslocamento. |
-| Estrutura visual confirmada   | Estrutura da tela (formulário e botão de registro) validada pelo time.                                     |
-| Campos obrigatórios definidos | Campos necessários para iniciar o uso da viatura definidos e documentados.                                 |
+| Critério                      | Descrição                                                    |
+| :---------------------------- | :----------------------------------------------------------- |
+| Wireframe aprovado            | Tela de início de uso validada com o time.                   |
+| Campos definidos              | Viatura, quilometragem inicial, data e finalidade definidos. |
+| Regra de negócio definida     | Um uso deve ser iniciado antes de poder ser encerrado.       |
+| Critérios de aceite definidos | Registro inicial e persistência definidos.                   |
 
----
-
-## Tela de Encerramento de Uso da Viatura
-
-| Critério                     | Descrição                                                                            |
-| :--------------------------- | :----------------------------------------------------------------------------------- |
-| Mockup do formulário         | Mockup da tela para registrar a quilometragem final e encerrar o uso da viatura.     |
-| Estrutura visual confirmada  | Estrutura da tela validada pelo time (formulário simples para encerramento).         |
-| Fluxo de utilização definido | Fluxo definido para encerrar corretamente um registro de uso iniciado anteriormente. |
 
 ---
 
-## Tela de Histórico de Utilização
+## US05 – Encerrar uso da viatura
 
-| Critério                       | Descrição                                                                                                                                  |
-| :----------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------- |
-| Mockup da listagem             | Mockup da tela exibindo histórico de utilização das viaturas.                                                                              |
-| Estrutura visual confirmada    | Estrutura da tela definida (tabela/lista com registros de saída, retorno e abastecimentos).                                                |
-| Informações exibidas definidas | Campos que devem aparecer no histórico definidos (viatura, data, quilometragem inicial, quilometragem final, abastecimentos relacionados). |
+| Critério                      | Descrição                                            |
+| :---------------------------- | :--------------------------------------------------- |
+| Wireframe aprovado            | Tela de encerramento validada com o time.            |
+| Regra de vínculo definida     | Encerramento deve estar vinculado a um uso iniciado. |
+| Regra de cálculo definida     | Quilometragem percorrida = final - inicial.          |
+| Critérios de aceite definidos | Encerramento e cálculo automático definidos.         |
+
+
+---
+
+## US06 – Consultar histórico de utilização
+
+| Critério                       | Descrição                                                       |
+| :----------------------------- | :-------------------------------------------------------------- |
+| Wireframe aprovado             | Tela de histórico validada com o time.                          |
+| Estrutura da listagem definida | Tabela/lista com registros de uso e abastecimento.              |
+| Campos definidos               | Viatura, data, km inicial, km final, abastecimentos vinculados. |
+| Critérios de aceite definidos  | Consulta e visualização dos dados definidos.                    |
+
 
 ---
 
@@ -70,40 +77,47 @@ Permitir o **controle da utilização das viaturas**, registrando início e tér
 
 ## Requisitos Gerais
 
-| Critério                         | Descrição                                                                                            |
-| :------------------------------- | :--------------------------------------------------------------------------------------------------- |
-| Implementação funcional completa | Funcionalidades de início e término do uso da viatura implementadas conforme user stories da sprint. |
-| Disponibilidade em repositório   | Código disponível em repositório e acessível para demonstração.                                      |
-| Testes básicos realizados        | Funcionalidades testadas manualmente pelo time (início, encerramento e histórico de utilização).     |
-| Navegação funcional              | Navegação entre as telas de uso da viatura e histórico funcionando corretamente.                     |
+| Critério                | Descrição                                                                           |
+| :---------------------- | :---------------------------------------------------------------------------------- |
+| Código versionado       | Código commitado seguindo padrão de commits.                                        |
+| Build funcionando       | Projeto executa corretamente via Maven.                                             |
+| Integração com Sprint 1 | Funcionalidades utilizam dados já cadastrados (viaturas, usuários, abastecimentos). |
+| Evidências geradas      | Prints ou vídeo demonstrando o fluxo completo funcionando.                          |
 
 ---
 
-## Tela de Início de Uso da Viatura
+## US04 – Iniciar uso da viatura
 
-| Critério                     | Descrição                                                                                                                            |
-| :--------------------------- | :----------------------------------------------------------------------------------------------------------------------------------- |
-| Registro de início funcional | O sistema permite registrar o início do uso da viatura informando prefixo, quilometragem inicial, data e finalidade do deslocamento. |
-| Dados armazenados            | As informações registradas ficam armazenadas no sistema para posterior consulta.                                                     |
+| Critério            | Descrição                                             |
+| :------------------ | :---------------------------------------------------- |
+| Registro funcional  | Sistema permite iniciar uso da viatura.               |
+| Validação aplicada  | Campos obrigatórios validados.                        |
+| Persistência        | Dados armazenados no banco.                           |
+| Vínculo com usuário | Registro associado automaticamente ao técnico logado. |
 
----
-
-## Tela de Encerramento de Uso da Viatura
-
-| Critério                 | Descrição                                                                                          |
-| :----------------------- | :------------------------------------------------------------------------------------------------- |
-| Encerramento funcional   | O sistema permite registrar a quilometragem final e encerrar um registro de utilização da viatura. |
-| Cálculo da quilometragem | O sistema calcula automaticamente a quilometragem percorrida com base nos dados informados.        |
 
 ---
 
-## Tela de Histórico de Utilização
+## US05 – Encerrar uso da viatura
 
-| Critério              | Descrição                                                                               |
-| :-------------------- | :-------------------------------------------------------------------------------------- |
-| Listagem de registros | O sistema exibe histórico completo de utilização das viaturas.                          |
-| Informações exibidas  | A tela mostra dados de saída, retorno e abastecimentos relacionados à utilização.       |
-| Consulta funcional    | O responsável pela unidade pode consultar os registros para auditoria e acompanhamento. |
+| Critério               | Descrição                                           |
+| :--------------------- | :-------------------------------------------------- |
+| Encerramento funcional | Sistema permite encerrar um uso iniciado.           |
+| Validação aplicada     | Não permite encerrar sem uso previamente iniciado.  |
+| Cálculo automático     | Quilometragem percorrida calculada automaticamente. |
+| Persistência           | Dados atualizados corretamente no banco.            |
+
+
+---
+
+## US06 – Consultar histórico de utilização
+
+| Critério            | Descrição                                                  |
+| :------------------ | :--------------------------------------------------------- |
+| Listagem funcional  | Sistema exibe histórico completo de utilização.            |
+| Integração de dados | Exibe uso + abastecimentos vinculados.                     |
+| Consulta disponível | Administrador consegue visualizar registros para análise.  |
+| Dados consistentes  | Informações refletem corretamente os registros realizados. |
 
 
 
