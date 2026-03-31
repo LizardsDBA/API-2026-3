@@ -13,7 +13,7 @@ docs<scrum-1>: Estruturação inicial do repositório.
 ```
 
 ## Tipos de Commit:
-- **bugfix** – Soluciona um problema (bug fix). Relacionado ao PATCH no versionamento semântico.
+- **bugfix ou fix** – Soluciona um problema (bug fix). Relacionado ao PATCH no versionamento semântico.
 - **feat** – Inclui um novo recurso. Relacionado ao MINOR no versionamento semântico.
 - **docs** – Mudanças na documentação (como Readme). Não inclui alterações em código.
 - **style** – Alterações de formatação de código (ex: semicolons, trailing spaces, lint). Não inclui alterações em código.
