@@ -23,7 +23,8 @@ Implementar as funcionalidades essenciais do sistema, permitindo o **registro de
 | 5 | Alta | Como administrador, eu quero uma forma de comprovar o valor gasto no abastecimento, para garantir a confiabilidade das informações registradas. | 5 | 1 | ⏳ |
 ## Burndown da Sprint 1 
 
-<td><img src="URL AQUI DA IMAGEM" width="600"></td>
+<img src="/docs/assets/Burndown1Sprint.png" alt="logo LizardsDBA" width="600">
+
 
 # DoR - Definition of Ready – Sprint 1
 
