@@ -32,7 +32,7 @@ cd flow-track
 ```
 
 #### 3. Configuração do Banco de Dados
-A aplicação está comente configurada com `createDatabaseIfNotExist=true`. Portanto, se as credenciais do seu SGBD local (usuário `root` e senha `root`) estiverem corretas, **o próprio sistema criará o banco de dados `flowtrack` automaticamente** e construirá as estruturas das tabelas no primeiro start.
+A aplicação está configurada com `createDatabaseIfNotExist=true`. Portanto, se as credenciais do seu SGBD local (usuário `root` e senha `root`) estiverem corretas, **o próprio sistema criará o banco de dados `flowtrack` automaticamente** e construirá as estruturas das tabelas no primeiro start.
 
 *(Se você usa uma senha diferente de `root` no seu MySQL local, atualize a propriedade `spring.datasource.password=suasenha` no arquivo `src/main/resources/application.properties` antes da próxima etapa).*
 
