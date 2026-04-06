@@ -61,3 +61,59 @@ Registro de todos os custos lançados por abastecimento.
 | `numero_nf` | VARCHAR(50) | NULL | Documento fiscal do posto. |
 | `data_abastecimento`| DATETIME | DEFAULT NOW() | Quando efetivamente aconteceu a parada. |
 | `observacao` | TEXT | NULL | Justificativa do gasto. |
+
+
+## Diagrama ER - Flowtrack
+
+```mermaid
+erDiagram
+    usuario {
+        int id PK
+        varchar nome
+        varchar matricula UK
+        varchar senha
+        bool is_admin
+        bool ativo
+        bool primeiro_acesso
+        datetime created_at
+    }
+
+    viatura {
+        int id PK
+        varchar prefixo UK
+        varchar placa UK
+        varchar marca
+        varchar modelo
+        year ano
+        varchar tipo
+        varchar status
+        int km_atual
+        bool ativo
+        datetime created_at
+    }
+
+    tipo_combustivel {
+        int id PK
+        varchar nome UK
+        bool ativo
+    }
+
+    abastecimento {
+        int id PK
+        int os_id FK
+        int viatura_id FK
+        int usuario_id FK
+        varchar tipo_combustivel
+        decimal litros
+        decimal valor_total
+        int km_abastecimento
+        varchar numero_nf
+        datetime data_abastecimento
+        text observacao
+    }
+
+    usuario ||--o{ abastecimento : realiza
+    viatura ||--o{ abastecimento : recebe
+    tipo_combustivel ||--o{ abastecimento : "utilizado em"
+```
+
