@@ -63,7 +63,7 @@ Registro de todos os custos lançados por abastecimento.
 | `observacao` | TEXT | NULL | Justificativa do gasto. |
 
 
-## Diagrama ER - Flowtrack
+## Modelo Lógico  Relacional - Flowtrack
 
 ```mermaid
 erDiagram
