@@ -16,11 +16,11 @@ Implementar as funcionalidades essenciais do sistema, permitindo o **registro de
 ## Backlog da Sprint 1
 | RANK | PRIORIDADE | USER STORY | STORY POINTS | SPRINT | STATUS |
 | ---- | ---------- | ---------- | ------------ | ------ | ------ |
-| 1 | Alta | Como técnico, eu quero registrar um abastecimento informando viatura, quilometragem, litros, valor e número da nota fiscal, para substituir o registro manual da prancheta. | 5 | 1 | ⏳ |
-| 2 | Alta | Como administrador, eu quero cadastrar usuários no sistema com identificação por matrícula, para permitir o controle de acesso e rastreabilidade dos registros. | 3 | 1 | ⏳ |
-| 3 | Alta | Como administrador, eu quero cadastrar viaturas com informações como prefixo e tipo de combustível, para possibilitar o registro correto dos abastecimentos. | 3 | 1 | ⏳ |
-| 4 | Alta | Como administrador, eu quero cadastrar tipos de combustível, para padronizar os abastecimentos registrados no sistema. | 2 | 1 | ⏳ |
-| 5 | Alta | Como administrador, eu quero uma forma de comprovar o valor gasto no abastecimento, para garantir a confiabilidade das informações registradas. | 5 | 1 | ⏳ |
+| 1 | Alta | Como técnico, eu quero registrar um abastecimento informando viatura, quilometragem, litros, valor e número da nota fiscal, para substituir o registro manual da prancheta. | 5 | 1 | 🟢 |
+| 2 | Alta | Como administrador, eu quero cadastrar usuários no sistema com identificação por matrícula, para permitir o controle de acesso e rastreabilidade dos registros. | 3 | 1 | 🟢 |
+| 3 | Alta | Como administrador, eu quero cadastrar viaturas com informações como prefixo e tipo de combustível, para possibilitar o registro correto dos abastecimentos. | 3 | 1 | 🟢 |
+| 4 | Alta | Como administrador, eu quero cadastrar tipos de combustível, para padronizar os abastecimentos registrados no sistema. | 2 | 1 | 🟢 |
+| 5 | Alta | Como administrador, eu quero uma forma de comprovar o valor gasto no abastecimento, para garantir a confiabilidade das informações registradas. | 5 | 1 | 🟢 |
 ## Burndown da Sprint 1 
 
 <img src="/docs/assets/Burndown1Sprint.png" alt="logo LizardsDBA" width="600">
