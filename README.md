@@ -100,6 +100,11 @@ Link Sprint 1: [FlowTrack](https://youtu.be/xbfx4aLAWNo)
 
 ---
 
+## Estratégia de Branch e Padrão de Commit
+[Arquivos](docs/processo/sprints/)
+
+---
+
 ## Equipe
 <table>
   <tr>
