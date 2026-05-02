@@ -34,6 +34,50 @@ Sempre que precisar abastecer uma viatura, siga estes passos para registrar o cu
 <img width="1365" height="560" alt="image" src="https://github.com/user-attachments/assets/25e25d3e-8792-48fb-8b40-510eb975da74" />
 <img width="863" height="549" alt="image" src="https://github.com/user-attachments/assets/c6b5c980-03ab-4c2e-8e5d-522a5f5e6bef" />
 
+### 3. Registrar Uso de Viatura (Saída e Chegada)
+Sempre que precisar sair com um veículo da frota, é obrigatório registrar a sua saída e, posteriormente, o seu retorno (chegada).
+
+**Passo 1: Registrar a Saída**
+1. Na tela de Uso de Viatura ou Inicial, clique no botão **Registrar Saída**.
+<img width="1919" height="763" alt="image" src="https://github.com/user-attachments/assets/b230409a-f47b-423e-9b9d-eaf33f6ffcd7" />
+
+
+2. Preencha os dados iniciais da viagem:
+   * **Data e Hora de Saída:** Preenchido automaticamente com o momento atual (pode ser ajustado).
+   * **Condutor 2 (opcional):** Se estiver acompanhado de outro técnico, busque e selecione o nome dele no sistema.
+   * **Motivo:** Informe a finalidade do uso (ex: Administrativo, Fiscalização, Oficina, etc.).
+   * **Ordem de Serviço:** Caso o uso seja para uma OS específica, marque a caixa **Possui OS** e informe o Número da OS e o Tipo de Serviço (ex: Radar ou Calibração).
+   * **Viatura:** Selecione o veículo que será utilizado. O sistema filtra e exibe de forma inteligente apenas os carros disponíveis e que são **compatíveis com a sua CNH** e com o tipo de serviço.
+   * **KM de Saída:** Informe a quilometragem atual que consta no painel do carro.
+<img width="906" height="718" alt="image" src="https://github.com/user-attachments/assets/44413bdd-3a88-43f6-ae3f-55a15d622b98" />
+  
+
+3. Salve as informações. O registro ficará na tela com o status **Em Aberto** ou **Saída em Andamento**.
+<img width="1919" height="899" alt="image" src="https://github.com/user-attachments/assets/688ae6d7-ec8a-4fd3-b080-f7f2d531979b" />
+<img width="1919" height="739" alt="image" src="https://github.com/user-attachments/assets/82c7c469-c8de-4bd3-8aae-817d47b73311" />
+
+
+**Passo 2: Registrar a Chegada (Retorno)**
+1. Quando retornar da operação, localize o seu registro que está "Em Aberto" na tabela.
+2. Clique no ícone de **Registrar Chegada** (bandeira quadriculada) no relatório de uso, ou na tela Inicial, no botão de Encerrar corrida.
+<img width="1724" height="464" alt="image" src="https://github.com/user-attachments/assets/ea576eac-b485-49a3-b6b9-c81caabff0fd" />
+<img width="1918" height="736" alt="image" src="https://github.com/user-attachments/assets/9f56da78-a59e-486e-8b1f-1b1900b3171b" />
+
+
+3. Preencha os dados finais:
+   * **Data e Hora de Chegada.**
+   * **KM de Chegada:** Informe o hodômetro atualizado no ato da entrega do veículo.
+   * **Complemento / Observação:** Campo opcional para registrar algum detalhe que ocorreu na viagem.  
+
+4. Salve o registro. O status mudará para **Encerrado** e o sistema calculará automaticamente a distância percorrida.
+<img width="1420" height="583" alt="image" src="https://github.com/user-attachments/assets/3adcca52-ce2e-4f99-a734-4368aee68afd" />
+<img width="1714" height="614" alt="image" src="https://github.com/user-attachments/assets/bde350b7-6348-4ddd-b1d5-1fb65abd0a75" />
+
+
+
+*(Nota: Caso tenha aberto uma saída por engano, você pode utilizar o botão vermelho para **Cancelar** o uso, liberando a viatura imediatamente).*
+<img width="1682" height="598" alt="image" src="https://github.com/user-attachments/assets/16b0ae8c-6c79-4f6a-ac04-5e45a881afca" />
+
 
 ---
 
