@@ -86,41 +86,6 @@ Permitir o **controle da utilização das viaturas**, registrando início e tér
 
 ---
 
-## US04 – Iniciar uso da viatura
-
-| Critério            | Descrição                                             |
-| :------------------ | :---------------------------------------------------- |
-| Registro funcional  | Sistema permite iniciar uso da viatura.               |
-| Validação aplicada  | Campos obrigatórios validados.                        |
-| Persistência        | Dados armazenados no banco.                           |
-| Vínculo com usuário | Registro associado automaticamente ao técnico logado. |
-
-
----
-
-## US05 – Encerrar uso da viatura
-
-| Critério               | Descrição                                           |
-| :--------------------- | :-------------------------------------------------- |
-| Encerramento funcional | Sistema permite encerrar um uso iniciado.           |
-| Validação aplicada     | Não permite encerrar sem uso previamente iniciado.  |
-| Cálculo automático     | Quilometragem percorrida calculada automaticamente. |
-| Persistência           | Dados atualizados corretamente no banco.            |
-
-
----
-
-## US06 – Consultar histórico de utilização
-
-| Critério            | Descrição                                                  |
-| :------------------ | :--------------------------------------------------------- |
-| Listagem funcional  | Sistema exibe histórico completo de utilização.            |
-| Integração de dados | Exibe uso + abastecimentos vinculados.                     |
-| Consulta disponível | Administrador consegue visualizar registros para análise.  |
-| Dados consistentes  | Informações refletem corretamente os registros realizados. |
-
-
-
 ## Equipe
 <table>
   <tr>
