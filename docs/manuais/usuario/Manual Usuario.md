@@ -122,3 +122,26 @@ Esta é a sua tela de auditoria. Diferente da tela do usuário comum, o administ
 <img width="1364" height="551" alt="image" src="https://github.com/user-attachments/assets/ea69a08b-ee32-4cc0-8ef3-2af5fb577322" />
 
 
+### 4. Relatório de Uso de Viatura Geral
+Enquanto o técnico visualiza apenas os próprios usos, o Administrador possui acesso completo a toda a movimentação de veículos da frota em tempo real. Esta tela atua como uma central de monitoramento e auditoria das viagens.
+
+* **Resumo de Movimentação (KPIs):** No topo da tela, você terá um painel gerencial que consolida os dados de todos os usos de viaturas, exibindo métricas vitais como:
+  * Total de Registros e Status atual (Viagens Em Aberto, Encerradas ou Canceladas).
+  * **Distância Rodada:** O somatório de todos os quilômetros rodados pela frota.
+  * **Média por Viagem:** A quilometragem média gasta em cada saída.
+  * **Tempo Médio de Uso:** Quantas horas, em média, as viaturas ficam em operação.
+  * **Motivo Principal:** Qual é a justificativa mais comum para a saída dos veículos.
+<img width="1919" height="929" alt="image" src="https://github.com/user-attachments/assets/fa4d128d-bae2-4cda-8cd7-1358385a94e2" />
+
+* **Filtros Avançados e Busca Global:** Você pode buscar rapidamente por qualquer viagem digitando o nome do motorista, placa ou prefixo da viatura, número de Ordem de Serviço (OS), além de poder filtrar por período de datas, status ou motivo do uso.
+<img width="1695" height="687" alt="image" src="https://github.com/user-attachments/assets/d645c9a4-4ed0-499b-93dc-d325aa5e2f40" />
+
+* **Poderes de Edição e Auditoria:** 
+  * Acompanhe em tempo real quem está conduzindo qual veículo e se há acompanhantes.
+<img width="1723" height="660" alt="image" src="https://github.com/user-attachments/assets/94a08d8d-d58b-4a91-a136-274ac20545ca" />
+
+  * Como administrador, além de visualizar os detalhes, você possui permissão para **Editar** usos de viatura criados pelos técnicos (útil para corrigir eventuais erros de digitação de KM ou data feitos pela equipe de campo).
+<img width="1336" height="818" alt="image" src="https://github.com/user-attachments/assets/fcf1b884-faf7-4e91-8cd9-b6c09eb4051b" />
+
+  * Você também pode encerrar viagens ou cancelar saídas diretamente por este painel.
+<img width="1689" height="324" alt="image" src="https://github.com/user-attachments/assets/f803cd89-030a-4396-b71b-cdfd77a20932" />
