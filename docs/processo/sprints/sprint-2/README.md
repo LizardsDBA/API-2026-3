@@ -37,42 +37,6 @@ Permitir o **controle da utilização das viaturas**, registrando início e tér
 
 ---
 
-## US04 – Iniciar uso da viatura
-
-| Critério                      | Descrição                                                    |
-| :---------------------------- | :----------------------------------------------------------- |
-| Wireframe aprovado            | Tela de início de uso validada com o time.                   |
-| Campos definidos              | Viatura, quilometragem inicial, data e finalidade definidos. |
-| Regra de negócio definida     | Um uso deve ser iniciado antes de poder ser encerrado.       |
-| Critérios de aceite definidos | Registro inicial e persistência definidos.                   |
-
-
----
-
-## US05 – Encerrar uso da viatura
-
-| Critério                      | Descrição                                            |
-| :---------------------------- | :--------------------------------------------------- |
-| Wireframe aprovado            | Tela de encerramento validada com o time.            |
-| Regra de vínculo definida     | Encerramento deve estar vinculado a um uso iniciado. |
-| Regra de cálculo definida     | Quilometragem percorrida = final - inicial.          |
-| Critérios de aceite definidos | Encerramento e cálculo automático definidos.         |
-
-
----
-
-## US06 – Consultar histórico de utilização
-
-| Critério                       | Descrição                                                       |
-| :----------------------------- | :-------------------------------------------------------------- |
-| Wireframe aprovado             | Tela de histórico validada com o time.                          |
-| Estrutura da listagem definida | Tabela/lista com registros de uso e abastecimento.              |
-| Campos definidos               | Viatura, data, km inicial, km final, abastecimentos vinculados. |
-| Critérios de aceite definidos  | Consulta e visualização dos dados definidos.                    |
-
-
----
-
 # DoD - Definition of Done – Sprint 2
 
 ## Requisitos Gerais
