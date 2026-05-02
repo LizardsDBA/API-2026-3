@@ -86,14 +86,40 @@ Sempre que precisar sair com um veículo da frota, é obrigatório registrar a s
 O perfil Administrador possui visão gerencial completa sobre a frota, gerenciamento de custos e controle de acessos da equipe técnica.
 
 ### 1. Dashboard (Indicadores)
-Ao acessar o sistema, você verá os KPIs (Indicadores de Desempenho) gerais da operação da frota:
-* **Total de Viaturas:** Quantidade completa da frota da empresa.
-* **Viaturas Ativas:** Quantos veículos estão rodando/disponíveis no momento.
-* **Técnicos Ativos:** Número de usuários/motoristas ativos utilizando o sistema.
-* **Total de Abastecimentos:** Volume de registros lançados por toda a equipe.
-* **Gasto com Combustível:** Somatório real financeiro de todo o consumo registrado na plataforma.
+Ao acessar o sistema, você verá os KPIs (Indicadores de Desempenho) gerais da operação da frota divididos em quatro categorias principais para uma visão gerencial completa:
 
-<img width="1365" height="553" alt="image" src="https://github.com/user-attachments/assets/07573060-2059-40dd-8939-6eb847c447ea" />
+**1. Gestão de Viaturas (Disponibilidade)**
+Estes indicadores medem o status atual da sua frota em tempo real.
+*   **Total da Frota:** Contagem absoluta de todos os veículos cadastrados na base de dados, independentemente do status.
+*   **Viaturas Disponíveis:** Total de veículos marcados como ativos no sistema subtraído da quantidade de veículos que possuem um registro de uso "Em Aberto".
+*   **Viaturas em Uso:** Contagem de viagens (usos de viatura) que estão com o status `ABERTO` (o veículo saiu, mas ainda não registrou o retorno).
+*   **Inativas/Manutenção:** Veículos que foram desativados no cadastro (geralmente por estarem em manutenção pesada, vendidos ou baixados).
+
+**2. Abastecimento e Consumo Financeiro**
+Estes indicadores avaliam a eficiência financeira e de queima de combustível da frota.
+*   **Gasto Combustível (R$):** Representa o custo total financeiro gasto nas bombas de combustível.
+*   **Consumo Médio (km/L):** Mede a eficiência energética geral da frota (Distância Total ÷ Total Abastecido). Se o valor estiver muito baixo, indica consumo excessivo (manutenção necessária ou direção agressiva).
+*   **Custo Médio / KM (R$):** Indica quantos reais a empresa gasta de combustível para cada quilômetro que a frota avança. É o principal KPI de auditoria de custo operacional.
+*   **Total Abastecido (L):** Soma em litros de todos os registros de abastecimento.
+*   **Gráfico - Custo de Combustível por Viatura:** Exibe o *Top 5* veículos que mais consomem orçamento.
+
+**3. Operação e Uso de Viaturas**
+Foco na logística diária, apontando como e por quanto tempo os veículos operam.
+*   **Distância Rodada (km):** O total absoluto de quilômetros que a frota percorreu em missões concluídas.
+*   **Viagens Concluídas:** Contagem de registros de uso com status `ENCERRADO`.
+*   **Tempo Médio Uso:** Mostra quanto tempo (em horas) os veículos ficam fora da base por cada missão. Ajuda a dimensionar se a frota é suficiente para a demanda de horas na rua.
+*   **Viagens c/ Acomp. (%):** Demonstra o percentual de viagens em que o condutor foi acompanhado. Útil para regras de segurança do trabalho.
+*   **Gráfico - Principais Motivos de Uso (Pizza):** Conta a frequência de cada motivo (Fiscalização, Oficina, Administrativo, etc.), revelando a demanda principal da frota.
+
+**4. Equipe e Condutores**
+Indicadores voltados aos recursos humanos que operam os veículos.
+*   **Total de Usuários:** Contagem absoluta de todos os perfis ativos (Administradores e Técnicos) com permissão para dirigir.
+*   **Técnicos Ativos:** Contagem de usuários ativos que não possuem privilégios de administrador.
+*   **Motoristas do Mês:** Mostra quantos funcionários únicos realmente registraram viagens e colocaram a mão no volante no período avaliado.
+*   **Gráfico - Top Condutores (Barras):** O *Top 5* que mostra quem são os condutores mais ativos/exigidos pela operação (baseado em distância rodada).
+*   **Gráfico - Distribuição por Categoria de CNH (Pizza):** Mostra a quantidade de usuários por categoria (A, B, AB, etc.), permitindo saber se há motoristas/motociclistas suficientes para a frota disponível.
+<img width="1919" height="914" alt="image" src="https://github.com/user-attachments/assets/7f7ebfa5-d954-42f6-8d6a-8f421d728369" />
+
 
 
 ### 2. Menu de Cadastros
