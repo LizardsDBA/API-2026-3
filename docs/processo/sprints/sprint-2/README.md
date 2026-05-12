@@ -15,9 +15,9 @@ Permitir o **controle da utilização das viaturas**, registrando início e tér
 ## Backlog da Sprint 2
 | RANK | PRIORIDADE | USER STORY                                                                                                                                                                              | STORY POINTS | SPRINT | STATUS |
 | ---- | ---------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | ------ | ------ |
-| 4    | Média       | Como administrador, eu quero que o técnico inicie o uso de uma viatura informando prefixo, quilometragem inicial, data e finalidade do deslocamento, para registrar o início da utilização.     | 5            | 2      | ⏳      |
-| 5    | Média       | Como administrador, eu quero que o tecnico encerre o uso da viatura informando a quilometragem final, para registrar o término da utilização e calcular a quilometragem percorrida.                        | 3            | 2      | ⏳      |
-| 6    | Média      | Como administrador, eu quero consultar o histórico completo de utilização das viaturas (saídas, retornos e abastecimentos), para permitir auditoria e acompanhamento dos registros.     | 5            | 2      | ⏳      |
+| 4    | Média       | Como administrador, eu quero que o técnico inicie o uso de uma viatura informando prefixo, quilometragem inicial, data e finalidade do deslocamento, para registrar o início da utilização.     | 5            | 2      | 🟢      |
+| 5    | Média       | Como administrador, eu quero que o tecnico encerre o uso da viatura informando a quilometragem final, para registrar o término da utilização e calcular a quilometragem percorrida.                        | 3            | 2      | 🟢      |
+| 6    | Média      | Como administrador, eu quero consultar o histórico completo de utilização das viaturas (saídas, retornos e abastecimentos), para permitir auditoria e acompanhamento dos registros.     | 5            | 2      | 🟢      |
 
 ## Burndown da Sprint 2 
 
