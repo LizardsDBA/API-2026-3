@@ -78,7 +78,34 @@ Sempre que precisar sair com um veículo da frota, é obrigatório registrar a s
 *(Nota: Caso tenha aberto uma saída por engano, você pode utilizar o botão vermelho para **Cancelar** o uso, liberando a viatura imediatamente).*
 <img width="1682" height="598" alt="image" src="https://github.com/user-attachments/assets/16b0ae8c-6c79-4f6a-ac04-5e45a881afca" />
 
+### 4. Registro de Manutenção
 
+Sempre que uma viatura passar por qualquer tipo de serviço mecânico ou manutenção, registre o ocorrido no sistema para manter o histórico atualizado da frota.
+
+1. Acesse a tela de **Manutenção** e clique no formulário de **Registrar Manutenção**.
+<img width="1919" height="908" alt="image" src="https://github.com/user-attachments/assets/6d02ecb6-22c8-4143-831e-714afd97b0ed" />
+<img width="1919" height="473" alt="image" src="https://github.com/user-attachments/assets/9f500f5c-e1f0-4d97-a30e-2289edd06098" />
+
+
+2. Preencha os dados do serviço:
+   * **Viatura:** Selecione a viatura que recebeu o serviço.
+   * **Tipo de Manutenção:** Classifique o tipo de intervenção realizada:
+     * **Preventiva** — serviço programado com base em quilometragem ou tempo (ex: troca de óleo, revisão).
+     * **Corretiva** — reparo emergencial motivado por falha ou quebra.
+     * **Inutilidade** — registro de peça ou item descartado / inservível.
+     * **Outros** — demais ocorrências não enquadradas acima.
+   * **Tipo de Serviço:** Informe o serviço executado (ex: Troca de Óleo, Troca de Pneu). O sistema sugere serviços já cadastrados conforme você digita; caso seja um serviço novo, basta digitá-lo e ele será salvo automaticamente.
+   * **Descrição:** Descreva com detalhes o que foi realizado.
+   * **Custo (R$):** Valor total pago pelo serviço.
+   * **KM no Registro:** Quilometragem do hodômetro no momento da manutenção. Ao salvar, o sistema atualizará automaticamente a quilometragem atual da viatura.
+   * **Próxima Manutenção (KM)** *(apenas para Preventiva)*: Se o serviço for **Preventiva**, informe o KM previsto para a próxima intervenção. O sistema monitorará o hodômetro da viatura e enviará alertas automaticamente:
+     * ⚠️ **Alerta (90%):** Quando a viatura atingir 90% do intervalo, um aviso de atenção será exibido.
+     * 🔴 **Alerta Urgente:** Quando a viatura ultrapassar o KM programado sem que a manutenção tenha sido realizada, um alerta de urgência será disparado.
+
+3. Clique em **Salvar**. O registro ficará disponível no histórico da viatura.
+<img width="900" height="773" alt="image" src="https://github.com/user-attachments/assets/d823eca1-b5b3-4410-b0ef-236fd05b5811" />
+
+> **Nota:** Você pode consultar os registros de manutenção que você mesmo cadastrou a qualquer momento na listagem da tela.
 ---
 
 ## 🛡️ Perfil Administrador
@@ -171,3 +198,37 @@ Enquanto o técnico visualiza apenas os próprios usos, o Administrador possui a
 
   * Você também pode encerrar viagens ou cancelar saídas diretamente por este painel.
 <img width="1689" height="324" alt="image" src="https://github.com/user-attachments/assets/f803cd89-030a-4396-b71b-cdfd77a20932" />
+
+### 5. Relatório de Manutenção Geral
+
+Como administrador, você possui acesso completo ao histórico de manutenções de **toda a frota**, independentemente de qual técnico realizou o registro.
+
+* **Visão Consolidada:** Consulte a lista de todos os registros de manutenção de todas as viaturas, com informações de viatura, tipo de manutenção, serviço executado, técnico responsável pelo registro, período, custo e quilometragens.
+<img width="1919" height="915" alt="image" src="https://github.com/user-attachments/assets/7e43d55e-2212-47b6-9263-8fabda2b2eb9" />
+
+* **Filtros Avançados:** Utilize os filtros disponíveis para refinar a consulta:
+  * **Viatura:** Filtre os registros de uma viatura específica.
+  * **Tipo de Manutenção:** Visualize apenas registros de um tipo (Preventiva, Corretiva, Inutilidade, Outros).
+  * **Período:** Defina um intervalo de datas de início para restringir os resultados.
+<img width="1919" height="906" alt="image" src="https://github.com/user-attachments/assets/37a19fdb-3426-4ccb-a1c8-178c517b050d" />
+ 
+
+
+* **Auditoria de Custos:** Utilize este relatório para acompanhar quanto está sendo gasto em manutenções, identificar viaturas com alta frequência de reparos corretivos e tomar decisões sobre a renovação ou substituição de veículos da frota.
+<img width="1653" height="538" alt="image" src="https://github.com/user-attachments/assets/53553019-06f3-405e-9086-62f31e2705c8" />
+
+
+
+* **Alertas de Manutenção Preventiva:** Para viaturas com manutenções preventivas cadastradas com KM previsto, o sistema monitora automaticamente o hodômetro e sinaliza quando uma viatura está se aproximando ou já ultrapassou o intervalo de manutenção programado:
+  * ⚠️ **Alerta:** A viatura atingiu **90%** do intervalo desde a última manutenção preventiva.
+  * 🔴 **Urgente:** A viatura **ultrapassou** o KM programado para a próxima manutenção sem que o serviço tenha sido realizado.
+<img width="1919" height="557" alt="image" src="https://github.com/user-attachments/assets/92d83b45-28f4-42cb-a810-c797a614d1f6" />
+<img width="421" height="492" alt="image" src="https://github.com/user-attachments/assets/91c31c12-a1ee-441b-97d0-c4633b56fd18" />
+
+  > Como administrador, você pode visualizar e gerenciar esses alertas diretamente pelo painel, garantindo que nenhuma viatura opere além do prazo seguro.
+<img width="1919" height="893" alt="image" src="https://github.com/user-attachments/assets/d2bad2a9-5d69-476f-9089-69174c19480f" />
+
+* **Edição e Exclusão:** Você possui permissão para **editar** ou **excluir** qualquer registro de manutenção lançado pelos técnicos, útil para corrigir eventuais erros de preenchimento.
+<img width="1662" height="317" alt="image" src="https://github.com/user-attachments/assets/ec0591eb-e5a1-4a31-921a-aa6ba774fc98" />
+
+
