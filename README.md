@@ -105,6 +105,10 @@ Link Sprint 1: [FlowTrack](https://youtu.be/xbfx4aLAWNo)
 
 ---
 
+## Alocação de Tarefas - JIRA
+Todas as Tasks do Projeto: [FlowTrack](https://lizardsdba.github.io/API-2026-3-tarefas/)
+
+---
 ## Equipe
 <table>
   <tr>
