@@ -21,7 +21,8 @@ Disponibilizar **ferramentas de gestão e análise**, incluindo avisos de manute
 
 ## Burndown da Sprint 3 
 
-<td><img src="URL AQUI DA IMAGEM" width="600"></td>
+<img width="560" height="251" alt="image" src="https://github.com/user-attachments/assets/1fb037ac-0021-4fdd-87d1-18ea58566ac8" />
+
 
 #  DoR - Definition of Ready – Sprint 3
 
