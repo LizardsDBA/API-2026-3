@@ -39,9 +39,9 @@ O FlowTrack permitirá o registro digital da utilização de viaturas, substitui
 | 4    | Média       | Como administrador, eu quero que o técnico inicie o uso de uma viatura informando prefixo, quilometragem inicial, data e finalidade do deslocamento, para registrar o início da utilização.     | 5            | 2      | 🟢      |
 | 5    | Média       | Como administrador, eu quero que o tecnico encerre o uso da viatura informando a quilometragem final, para registrar o término da utilização e calcular a quilometragem percorrida.                        | 3            | 2      | 🟢      |
 | 6    | Média      | Como administrador, eu quero consultar o histórico completo de utilização das viaturas (saídas, retornos e abastecimentos), para permitir auditoria e acompanhamento dos registros.     | 5            | 2      | 🟢      |
-| 7    | Baixa      | Como administrador, eu quero receber avisos de manutenção preventiva quando a quilometragem da viatura atingir determinados intervalos, para apoiar o controle de revisão dos veículos. | 5            | 3      | ⏳      |
-| 8    | Baixa      | Como administrador, eu quero ter visibilidade de indicadores como: Consumo médio, quilometragem percorrida e gastos por viatura, para facilitar a análise gerencial.               | 8            | 3      | ⏳      |
-| 9   | Baixa      | Como administrador, eu quero gerar relatórios consolidados de utilização e abastecimento das viaturas, para facilitar o envio das informações ao SGI.                                   | 5            | 3      | ⏳      |
+| 7    | Baixa      | Como administrador, eu quero receber avisos de manutenção preventiva quando a quilometragem da viatura atingir determinados intervalos, para apoiar o controle de revisão dos veículos. | 5            | 3      | 🟢      |
+| 8    | Baixa      | Como administrador, eu quero ter visibilidade de indicadores como: Consumo médio, quilometragem percorrida e gastos por viatura, para facilitar a análise gerencial.               | 8            | 3      | 🟢      |
+| 9   | Baixa      | Como administrador, eu quero gerar relatórios consolidados de utilização e abastecimento das viaturas, para facilitar o envio das informações ao SGI.                                   | 5            | 3      | 🟢      |
 
 ---
 
@@ -74,7 +74,7 @@ O FlowTrack permitirá o registro digital da utilização de viaturas, substitui
 | 🟢 **SPRINT 1 REVIEW/PLANNING** | 06/04 - 10/04 | [Sprint 1](./docs/processo/sprints/sprint-1/README.md) |
 | 🟢 **SPRINT 2** | 13/04 - 03/05 | [Sprint 2](./docs/processo/sprints/sprint-2/README.md) |
 | 🟢 **SPRINT 2 REVIEW/PLANNING** | 04/05 - 08/05 | [Sprint 2](./docs/processo/sprints/sprint-2/README.md) |
-| 🔴 **SPRINT 3** | 11/05 - 31/05 | [Sprint 3](./docs/processo/sprints/sprint-3/README.md) |
+| 🟢 **SPRINT 3** | 11/05 - 31/05 | [Sprint 3](./docs/processo/sprints/sprint-3/README.md) |
 | 🔴 **SPRINT 3 REVIEW/PLANNING** | 01/06 - 05/06 | [Sprint 3](./docs/processo/sprints/sprint-3/README.md) |
 | 🔴 **FEIRA DE SOLUÇÕES** | 18/06 |  |
 
