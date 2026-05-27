@@ -92,6 +92,9 @@ Link Sprint 1: [FlowTrack](https://youtu.be/xbfx4aLAWNo)
 ![IntelliJ IDEA](https://img.shields.io/badge/IntelliJ%20IDEA-000000?style=for-the-badge&logo=intellij-idea&logoColor=white)
 ![Jira](https://img.shields.io/badge/Jira-0052CC?style=for-the-badge&logo=jira&logoColor=white)
 ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white)
+![ViaCEP API](https://img.shields.io/badge/ViaCEP-0088CC?style=for-the-badge&logo=googlemaps&logoColor=white)
+![OpenLayers](https://img.shields.io/badge/OpenLayers-1F6B75?style=for-the-badge&logo=openlayers&logoColor=white)
+![Nominatim](https://img.shields.io/badge/Nominatim-7E57C2?style=for-the-badge&logo=openstreetmap&logoColor=white)
 
 ---
 
