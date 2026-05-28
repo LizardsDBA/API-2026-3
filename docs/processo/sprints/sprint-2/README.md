@@ -21,7 +21,8 @@ Permitir o **controle da utilização das viaturas**, registrando início e tér
 
 ## Burndown da Sprint 2 
 
-<td><img src="URL AQUI DA IMAGEM" width="600"></td>
+<img width="380" height="252" alt="image" src="https://github.com/user-attachments/assets/f089b275-1957-4a8f-a047-7ebc3b630344" />
+
 
 # DoR - Definition of Ready – Sprint 2
 
